@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ETF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="screen active" id="start_screen">
+            <h1>Time to check how unhinged you are</h1>
+            <p>Or if you even remember how unhinged your friends are</p>
+            <button id="start-btn">Start Quiz</button>
+        </div>
+
+        <div class="screen" id="quiz_screen">
+            <h2 id="question">Question</h2>
+
+            <div class="quiz_info">
+                <p>Question <span id="current-question">1</span> of <span id="total-questions">5</span></p>
+                <p>Score <span id="score">0</span></p>
+            </div>
+
+            <div id="answers-container">
+                <!-- Insert the answers for each question in JS -->
+                 <div class="answer-btn">ceva</div>
+            </div>
+
+            <div id="progress-bar">
+                <div id="progress" class="progress">
+                    <!-- This will be calculated in JS -->
+                </div>
+            </div>
+        </div>
+
+        <div class="screen" id="result_screen">
+            <h1>Quiz Results</h1>
+            <div class="results_container" id="results_container">
+                <p>You scored <span id="final-score">0</span> out of <span id="max-score">5</span></p>
+                <h2 id="results-message">Good job!</h2>
+            </div>
+            <button id="restart-btn">Restart Quiz</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
